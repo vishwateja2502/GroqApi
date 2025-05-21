@@ -1,7 +1,6 @@
 import os
 from flask import Flask, request, jsonify, send_from_directory
 from groq import Groq
-import pandas as pd
 
 app = Flask(__name__)
 
