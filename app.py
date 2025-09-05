@@ -1,7 +1,8 @@
 import os
+from dotenv import load_dotenv   # add this
 from flask import Flask, request, jsonify, send_from_directory
 from groq import Groq
-
+load_dotenv()
 app = Flask(__name__)
 
 # Initialize Groq client with just the API key
